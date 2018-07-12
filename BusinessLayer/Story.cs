@@ -11,6 +11,6 @@ namespace BusinessLayer
         public int ID { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
-        public string PostedDate { get; set; }
+        public string DatePosted { get; set; }
     }
 }

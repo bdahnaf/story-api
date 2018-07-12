@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cefalo", "Cefalo\Cefalo.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cefalo.Tests", "Cefalo.Tests\Cefalo.Tests.csproj", "{4D7E4C5F-40A0-45DD-8E05-387BFDA690A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{B3619264-BE91-44B6-8195-FF8EC0570056}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4D7E4C5F-40A0-45DD-8E05-387BFDA690A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D7E4C5F-40A0-45DD-8E05-387BFDA690A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D7E4C5F-40A0-45DD-8E05-387BFDA690A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3619264-BE91-44B6-8195-FF8EC0570056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3619264-BE91-44B6-8195-FF8EC0570056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3619264-BE91-44B6-8195-FF8EC0570056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3619264-BE91-44B6-8195-FF8EC0570056}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
