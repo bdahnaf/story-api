@@ -40,5 +40,14 @@ namespace Cefalo.Controllers
             }
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Edit(int ID)
+        {
+            StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
+            Story storyObj = storyBusinessLayerObj.Stories.Single(str => str.ID == ID);
+
+            return View(storyObj);
+        }
     }
 }
