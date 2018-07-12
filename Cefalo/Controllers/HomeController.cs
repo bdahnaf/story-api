@@ -14,7 +14,6 @@ namespace Cefalo.Controllers
         {
             StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
             List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
-
             return View(storiesObj);
         }
 
@@ -72,6 +71,15 @@ namespace Cefalo.Controllers
             storyBusinessLayerObj.DeleteStory(ID);
 
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult ExportJson(int ID)
+        {
+
+            StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
+            List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
+            return Json(new { data = storiesObj.Find(id => id.ID == ID) }, JsonRequestBehavior.AllowGet);
         }
     }
 }
