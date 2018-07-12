@@ -17,5 +17,13 @@ namespace Cefalo.Controllers
 
             return View(storiesObj);
         }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            
+
+            return View();
+        }
     }
 }
