@@ -38,5 +38,35 @@ namespace BusinessLayer
                 return stories;
             }
         }
+
+        public void AddStory(Story storiesObj)
+        {
+            string connectionString =
+            ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("spAddStories", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter paramTitle = new SqlParameter();
+                paramTitle.ParameterName = "@vTitle";
+                paramTitle.Value = storiesObj.Title;
+                cmd.Parameters.Add(paramTitle);
+
+                SqlParameter paramBody = new SqlParameter();
+                paramBody.ParameterName = "@vBody";
+                paramBody.Value = storiesObj.Body;
+                cmd.Parameters.Add(paramBody);
+
+                SqlParameter paramDate = new SqlParameter();
+                paramDate.ParameterName = "@vPostedDate";
+                paramDate.Value = storiesObj.DatePosted;
+                cmd.Parameters.Add(paramDate);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }
