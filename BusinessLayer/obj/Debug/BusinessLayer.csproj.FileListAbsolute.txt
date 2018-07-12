@@ -1,0 +1,5 @@
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\obj\Debug\BusinessLayer.pdb
