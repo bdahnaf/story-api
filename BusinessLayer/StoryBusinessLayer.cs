@@ -103,5 +103,25 @@ namespace BusinessLayer
                 cmd.ExecuteNonQuery();
             }
         }
+
+        public void DeleteStory(int ID)
+        {
+            string connectionString =
+            ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("spDeleteStories", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter paramID = new SqlParameter();
+                paramID.ParameterName = "@vID";
+                paramID.Value = ID;
+                cmd.Parameters.Add(paramID);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

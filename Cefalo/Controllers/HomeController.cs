@@ -63,5 +63,15 @@ namespace Cefalo.Controllers
 
             return View(storyObj);
         }
+
+        [HttpGet]
+        public ActionResult Delete(int ID)
+        {
+
+            StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
+            storyBusinessLayerObj.DeleteStory(ID);
+
+            return RedirectToAction("Index");
+        }
     }
 }
