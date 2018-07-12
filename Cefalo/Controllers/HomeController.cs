@@ -29,14 +29,14 @@ namespace Cefalo.Controllers
         {
             if (ModelState.IsValid)
             {
-                foreach (string key in formCollectionObj.AllKeys)
-                {
-                    Response.Write("Key = " + key + "  ");
-                    Response.Write("Value = " + formCollectionObj[key]);
-                    Response.Write("<br/>");
-                }
+                Story storyObj = new Story();
+                storyObj.Title = formCollectionObj["Title"];
+                storyObj.Body = formCollectionObj["Body"];
+                storyObj.DatePosted = formCollectionObj["DatePosted"];
+                StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
+                storyBusinessLayerObj.AddStory(storyObj);
             }
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }
