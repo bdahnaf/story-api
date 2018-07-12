@@ -49,5 +49,19 @@ namespace Cefalo.Controllers
 
             return View(storyObj);
         }
+
+        [HttpPost]
+        public ActionResult Edit(Story storyObj)
+        {
+            if(ModelState.IsValid)
+            {
+                StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
+                storyBusinessLayerObj.EditStory(storyObj);
+
+                return RedirectToAction("Index");
+            }
+
+            return View(storyObj);
+        }
     }
 }
