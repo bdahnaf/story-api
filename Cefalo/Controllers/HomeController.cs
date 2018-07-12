@@ -79,6 +79,7 @@ namespace Cefalo.Controllers
 
             StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
             List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
+
             return Json(new { data = storiesObj.Find(id => id.ID == ID) }, JsonRequestBehavior.AllowGet);
         }
     }
