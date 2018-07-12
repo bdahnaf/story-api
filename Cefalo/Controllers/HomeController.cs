@@ -25,26 +25,13 @@ namespace Cefalo.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public ActionResult Create(FormCollection formCollectionObj)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        Story storyObj = new Story();
-        //        storyObj.Title = formCollectionObj["Title"];
-        //        storyObj.Body = formCollectionObj["Body"];
-        //        storyObj.DatePosted = formCollectionObj["DatePosted"];
-        //        StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
-        //        storyBusinessLayerObj.AddStory(storyObj);
-        //    }
-        //    return RedirectToAction("Index");
-        //}
-
-
         [HttpPost]
         [ActionName("Create")]
-        public ActionResult Create_Post(Story storyObj)
+        public ActionResult Create_Post()
         {
+            Story storyObj = new Story();
+            TryUpdateModel(storyObj);
+
             if (ModelState.IsValid)
             {
                 StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
