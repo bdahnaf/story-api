@@ -9,7 +9,7 @@
 5. Now the project is ready to to be run. Build and run the project.
 
 ##Views
-(Screenshots/Home.png)
+![Application name](Screenshots/Home.png)
 (Screenshots/Create.png)
 (Screenshots/Edit.png)
 (Screenshots/JSON.png)
