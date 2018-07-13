@@ -37,7 +37,7 @@
 * DB designed but not implemented on code due to short time.
 
 #Project Details
-Author - Ahnaf Shahriar
-Client - Cefalo
-Description - Assignment for the position of intern @ Cefalo.
-Contact - bdahnaf@gmail.com
+* Author - Ahnaf Shahriar
+* Client - Cefalo
+* Description - Assignment for the position of intern @ Cefalo.
+* Contact - bdahnaf@gmail.com
