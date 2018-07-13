@@ -12,8 +12,8 @@
 ###Home
 ![Cefalo](Screenshots/Home.PNG)
 ###Create New Story
-![Cefalo](Screenshots/Create.png)
+![Cefalo](Screenshots/Create.PNG)
 ###Update Story
-![Cefalo](Screenshots/Edit.png)
-###JSON outout
-![Cefalo](Screenshots/JSON.png)
+![Cefalo](Screenshots/Edit.PNG)
+###JSON output
+![Cefalo](Screenshots/JSON.PNG)
