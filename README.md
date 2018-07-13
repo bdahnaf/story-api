@@ -9,7 +9,11 @@
 5. Now the project is ready to to be run. Build and run the project.
 
 ##Views
+###Home
 ![Cefalo](Screenshots/Home.PNG)
-(Screenshots/Create.png)
-(Screenshots/Edit.png)
-(Screenshots/JSON.png)
+###Create New Story
+![Cefalo](Screenshots/Create.png)
+###Update Story
+![Cefalo](Screenshots/Edit.png)
+###JSON outout
+![Cefalo](Screenshots/JSON.png)
