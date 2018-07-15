@@ -26,15 +26,15 @@ namespace Cefalo.Controllers
         [ActionName("Create")]
         public ActionResult Create_Post()
         {
-            //Story storyObj = new Story();
-            //TryUpdateModel(storyObj);
+            User usersObj = new User();
+            TryUpdateModel(usersObj);
 
-            //if (ModelState.IsValid)
-            //{
-            //    StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
-            //    storyBusinessLayerObj.AddStory(storyObj);
-            //    return RedirectToAction("Index");
-            //}
+            if (ModelState.IsValid)
+            {
+                UserBusinessLayer userBusinessLayerObj = new UserBusinessLayer();
+                userBusinessLayerObj.AddUser(usersObj);
+                return Redirect("/Home/Index");
+            }
             return View();
         }
     }
