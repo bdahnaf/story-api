@@ -3,3 +3,8 @@ C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLay
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml

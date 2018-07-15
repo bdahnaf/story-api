@@ -47,3 +47,8 @@ C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\bin\
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\bin\System.Web.Mvc.xml
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\obj\Debug\Cefalo.dll
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\obj\Debug\Cefalo.pdb
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\bin\EntityFramework.dll
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\bin\EntityFramework.SqlServer.dll
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\bin\BusinessLayer.dll.config
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\bin\EntityFramework.xml
+C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\Cefalo\bin\EntityFramework.SqlServer.xml
