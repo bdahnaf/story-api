@@ -17,6 +17,7 @@ namespace Cefalo.Controllers
             return View(storiesObj);
         }
 
+
         [HttpGet]
         [ActionName("Create")]
         public ActionResult Create_Get()
