@@ -10,9 +10,34 @@ namespace Cefalo.Controllers
     public class AccountController : Controller
     {
         // GET: Account
-        public ActionResult Index()
+        [HttpGet]
+        [ActionName("Index")]
+        public ActionResult Index_Get()
         {
             return View();
+        }
+
+        [HttpPost]
+        //[ActionName("Index")]
+        public ActionResult Index()
+        {
+            User usersObj = new User();
+            TryUpdateModel(usersObj);
+
+            //if (ModelState.IsValid)
+            //{
+                UserBusinessLayer userBusinessLayerObj = new UserBusinessLayer();
+                bool check = userBusinessLayerObj.isUser(usersObj);
+                if(check == true)
+                {
+                    return Redirect("/Home/Index");
+                }
+                else
+                {
+                    return View();
+                }
+            ////}
+            //return View();
         }
 
         [HttpGet]
