@@ -12,9 +12,9 @@ namespace Cefalo.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
-            List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
-            return View(storiesObj);
+                StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
+                List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
+                return View(storiesObj);
         }
 
 

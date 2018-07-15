@@ -18,26 +18,27 @@ namespace Cefalo.Controllers
         }
 
         [HttpPost]
-        //[ActionName("Index")]
-        public ActionResult Index()
+        [ActionName("Index")]
+        public ActionResult Index_Post()
         {
             User usersObj = new User();
             TryUpdateModel(usersObj);
 
-            //if (ModelState.IsValid)
-            //{
+            if (ModelState.IsValid)
+            {
                 UserBusinessLayer userBusinessLayerObj = new UserBusinessLayer();
                 bool check = userBusinessLayerObj.isUser(usersObj);
                 if(check == true)
                 {
+                    Session["username"] = usersObj.username;
                     return Redirect("/Home/Index");
                 }
                 else
                 {
                     return View();
                 }
-            ////}
-            //return View();
+        }
+            return View();
         }
 
         [HttpGet]
