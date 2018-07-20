@@ -31,6 +31,7 @@ namespace BusinessLayer
                         storyObj.Title = reader["Title"].ToString();
                         storyObj.Body = reader["Body"].ToString();
                         storyObj.DatePosted = reader["DatePosted"].ToString();
+                        storyObj.authorID = reader["authorID"].ToString();
 
                         stories.Add(storyObj);
                     }
