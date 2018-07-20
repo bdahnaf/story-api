@@ -16,5 +16,6 @@ namespace BusinessLayer
         public string Body { get; set; }
         [Required]
         public string DatePosted { get; set; }
+        public string authorID { get; set; }
     }
 }
