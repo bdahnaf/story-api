@@ -12,6 +12,10 @@ namespace Cefalo.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            //if(Session["username"]==null)
+            //{
+            //    return Redirect("/Account/Index");
+            //}
                 StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
                 List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
                 return View(storiesObj);

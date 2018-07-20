@@ -8,3 +8,13 @@ C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLay
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Users\Ahnaf Shahriar\documents\visual studio 2017\Projects\Cefalo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\ahnaf\Documents\Visual Studio 2015\Projects\cefalo\BusinessLayer\obj\Debug\BusinessLayer.pdb
