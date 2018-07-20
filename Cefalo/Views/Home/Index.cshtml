@@ -2,61 +2,59 @@
 
 @{
     ViewBag.Title = "Stories";
-   
+
 }
 
-<h2>Home</h2>
+<!DOCTYPE html>
 
-<p>
-    @if (Session["username"] != null)
-    {
-        @Html.ActionLink("Create New", "Create")
-    }
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Body)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DatePosted)
-        </th>
-        <th></th>
-    </tr>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index_Test</title>
+</head>
+<body>
+    <div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Body)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DatePosted)
-        </td>
-    </tr>
-    <tr>
-        <td>
+        <h4>Story</h4>
+        <hr />
+        <div class="container">
 
-            @Html.ActionLink("JSON", "ExportJson", new { id = item.ID })
-        </td>
-        <td>
 
-        </td>
-        <td>
-            @if(Session["username"] != null)
+            @foreach (var item in Model)
             {
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID });
-                @:<span>|=|</span>
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                <div class="col-xs-12">
+                    
+                    <h3>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </h3>
+                    <h6>by @Html.DisplayFor(modelItem => item.authorID) | @Html.DisplayFor(modelItem => item.DatePosted)</h6>
+                    <p>
+                        @Html.DisplayFor(modelItem => item.Body)
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("ExportJson", "", new { id = item.ID })'">
+                                JSON
+                            </button>
+
+                        </div>
+                        <div class="btn-group pull-right">
+                            <div class="pull-right">
+                                @if (Session["username"] != null && Session["username"].ToString() == item.authorID)
+                                {
+                                    <button type="button" class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("Edit", "", new { id = item.ID })'">
+                                        Edit
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-sm" onclick="location.href='@Url.Action("Delete", "", new { id = item.ID })'">
+                                        Delete
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                        
+                    </p>
+                </div>
 
             }
-        </td>
-    </tr>
-}
-
-</table>
+        </div>
+     </div>
+</body>
+</html>

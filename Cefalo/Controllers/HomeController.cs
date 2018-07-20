@@ -20,7 +20,13 @@ namespace Cefalo.Controllers
                 List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
                 return View(storiesObj);
         }
+        //public ActionResult Index_Test()
+        //{
 
+        //    StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
+        //    List<Story> storiesObj = storyBusinessLayerObj.Stories.ToList();
+        //    return View(storiesObj);
+        //}
 
         [HttpGet]
         [ActionName("Create")]
