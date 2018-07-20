@@ -65,6 +65,11 @@ namespace BusinessLayer
                 paramDate.Value = storiesObj.DatePosted;
                 cmd.Parameters.Add(paramDate);
 
+                SqlParameter paramAuthorID = new SqlParameter();
+                paramAuthorID.ParameterName = "@vAuthorID";
+                paramAuthorID.Value = storiesObj.authorID;
+                cmd.Parameters.Add(paramAuthorID);
+
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
