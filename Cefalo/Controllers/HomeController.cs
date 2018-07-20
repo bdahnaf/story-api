@@ -54,6 +54,10 @@ namespace Cefalo.Controllers
         [HttpGet]
         public ActionResult Edit(int ID)
         {
+            if (Session["username"] == null)
+            {
+                return Redirect("/Account/Index");
+            }
             StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
             Story storyObj = storyBusinessLayerObj.Stories.Single(str => str.ID == ID);
 
@@ -63,7 +67,11 @@ namespace Cefalo.Controllers
         [HttpPost]
         public ActionResult Edit(Story storyObj)
         {
-            if(ModelState.IsValid)
+            if (Session["username"] == null)
+            {
+                return Redirect("/Account/Index");
+            }
+            if (ModelState.IsValid)
             {
                 StoryBusinessLayer storyBusinessLayerObj = new StoryBusinessLayer();
                 storyBusinessLayerObj.EditStory(storyObj);
