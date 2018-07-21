@@ -37,7 +37,7 @@ namespace Cefalo.Controllers
                 {
                     return View();
                 }
-        }
+            }
             return View();
         }
 
@@ -59,6 +59,7 @@ namespace Cefalo.Controllers
             {
                 UserBusinessLayer userBusinessLayerObj = new UserBusinessLayer();
                 userBusinessLayerObj.AddUser(usersObj);
+                Session["username"] = usersObj.username;
                 return Redirect("/Home/Index");
             }
             return View();
