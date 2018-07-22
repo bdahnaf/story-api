@@ -11,6 +11,12 @@
 ##Views
 ###Home
 ![Cefalo](Screenshots/Home.PNG)
+###Home Logged In
+![Cefalo](Screenshots/HomeLoggedIn.PNG)
+###User Login in
+![Cefalo](Screenshots/UserLogin.PNG)
+###User Register
+![Cefalo](Screenshots/UserRegister.PNG)
 ###Create New Story
 ![Cefalo](Screenshots/Create.PNG)
 ###Update Story
@@ -33,8 +39,9 @@
 1. Export the stories as JSON. [x]
 2. Export the stories as XML. [bug]
 ###Phase 5
-1. Authentication layer. [not done]
-* DB designed but not implemented on code due to short time.
+1. Authentication layer. [x]
+2. Logged in User can create new story. [x]
+3. Logged in User can edit or delete only his/her stories. [x]
 
 #Project Details
 * Author - Ahnaf Shahriar

@@ -24,8 +24,8 @@ namespace Cefalo.Controllers
             User usersObj = new User();
             TryUpdateModel(usersObj);
 
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 UserBusinessLayer userBusinessLayerObj = new UserBusinessLayer();
                 bool check = userBusinessLayerObj.isUser(usersObj);
                 if(check == true)
@@ -37,7 +37,7 @@ namespace Cefalo.Controllers
                 {
                     return View();
                 }
-            }
+            //}
             return View();
         }
 
