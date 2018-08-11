@@ -53,8 +53,4 @@
 2. Logged in User can create new story. [x]
 3. Logged in User can edit or delete only his/her stories. [x]
 
-#Project Details
-* Author - Ahnaf Shahriar
-* Client - Cefalo
-* Description - Assignment for the position of intern @ Cefalo.
-* Contact - bdahnaf@gmail.com
+
